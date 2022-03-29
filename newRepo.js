@@ -100,7 +100,7 @@ const initialCommit = async (url) => {
 			.add('./*')
 			.commit('Initial commit')
 			.addRemote('origin', url)
-			.push(url, 'master', ['--set-upstream']);
+			.push(url, 'main', ['--set-upstream']);
 
 		return true;
 	} catch (error) {
